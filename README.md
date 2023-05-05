@@ -1,6 +1,6 @@
 # magic_receipts
 
-# Magic Receipts Android SDK
+Magic Receipts Flutter plugin, allows integration of Magic Receipts into Flutter Android and iOS apps.
 
 # Prerequisites
 
