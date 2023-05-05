@@ -5,7 +5,7 @@ Magic Receipts Flutter plugin, allows integration of Magic Receipts into Flutter
 # Prerequisites
 
 * Android SDK 21 or higher using Google Play Services 
-* iOS version 11.0 or higher 
+* iOS version 13.0 or higher 
 * Flutter version 1.20.0 or higher 
 * Dart SDK version 2.12.0 or higher 
 * CocoaPods version 1.10.0 or higher
