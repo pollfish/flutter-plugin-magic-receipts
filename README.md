@@ -115,8 +115,6 @@ A unique id to identify the user.
 
 <br/>
 
-<span style="text-decoration: underline">Kotlin:</span>
-
 ```dart
 MagicReceipts.initialize(
   ...
@@ -163,11 +161,9 @@ You can read more about Google Advertising ID changes [here](https://support.goo
 
 ### **6.2. `bool incentiveMode`**
 
-Initializes Magic Receipts SDK in incentivised mode. This means that Magic Receipts Indicator will not be shown and the Magic Receipts offer wall will be automatically hidden until the publisher explicitly calls `.show()` function (The publisher should wait for the `wallLoadedListener` callback). This behaviour enables the option for the publisher, to show a custom prompt to incentivize the user to participate.
+Initializes Magic Receipts SDK in incentivised mode. This means that Magic Receipts Indicator will not be shown and the Magic Receipts offer wall will be automatically hidden until the publisher explicitly calls `.show()` function (The publisher should wait for the `MagicReceiptsWallLoadedListener` callback). This behaviour enables the option for the publisher, to show a custom prompt to incentivize the user to participate.
 
 <br/>
-
-<span style="text-decoration: underline">Kotlin:</span>
 
 ```dart
 MagicReceipts.initialize(
@@ -183,8 +179,6 @@ MagicReceipts.initialize(
 A pass through param that will be passed back through server-to-server [postbacks](#postbacks) in order to identify the click.
 
 <br/>
-
-span style="text-decoration: underline">Kotlin:</span>
 
 ```dart
 MagicReceipts.initialize(
