@@ -1,0 +1,22 @@
+name: magic_receipts
+description: A new Flutter project.
+version: 1.0.0
+homepage: https://www.pollfish.com/magic-receipts/
+repository: https://github.com/pollfish/flutter-plugin-magic-receipts
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.20.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.pollfish.magicreceipts.flutter
+        pluginClass: MagicReceiptsPlugin
+      ios:
+        pluginClass: MagicReceiptsPlugin
