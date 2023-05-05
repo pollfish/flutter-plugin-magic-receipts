@@ -1,5 +1,5 @@
 name: magic_receipts
-description: A new Flutter project.
+description: Magic Receipts Flutter plugin, allows integration of Magic Receipts into Flutter Android and iOS apps
 version: 1.0.0
 homepage: https://www.pollfish.com/magic-receipts/
 repository: https://github.com/pollfish/flutter-plugin-magic-receipts
