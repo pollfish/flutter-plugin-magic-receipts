@@ -58,7 +58,7 @@ Add this to your package's pubspec.yaml file:
 ```yaml
 dependencies:
   ...
-  magic_receipts: ^1.0.0
+  magic_receipts: ^1.0.2
 ```
 
 Execute the following command

@@ -4,7 +4,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'magic_receipts'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'Magic Receipts Flutter iOS Module'
   s.description      = <<-DESC
 A  Flutter plugin for rendering Magic Receipts wall within an app

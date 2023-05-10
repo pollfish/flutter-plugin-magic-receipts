@@ -31,10 +31,18 @@ class MagicReceiptsPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
 
     override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
         when (call.method) {
-            "initialize" -> initMagicReceipts(call, result)
-            "show" -> result.success(show())
-            "hide" -> result.success(hide())
-            "isReady" -> result.success(isReady())
+            "initialize" -> {
+                initMagicReceipts(call, result)
+            }
+            "show" -> {
+                MagicReceipts.show()
+                result.success(null)
+            }
+            "hide" -> {
+                MagicReceipts.hide()
+                result.success(null)
+            }
+            "isReady" -> result.success(MagicReceipts.isReady())
             else -> result.notImplemented()
         }
     }
@@ -122,19 +130,11 @@ class MagicReceiptsPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
 
             binding?.let {
                 MagicReceipts.initialize(activity!!, builder.build())
+                result.success(null)
             } ?: run {
                 result.error("binding_not_found", "Flutter plugin binding was null", null)
             }
-
         } ?: run { result.error("no_api_key", "A null android api key was provided.", null) }
-    }
-
-    private fun show() {
-        MagicReceipts.show()
-    }
-
-    private fun hide() {
-        MagicReceipts.hide()
     }
 
     private fun isReady() = MagicReceipts.isReady()
